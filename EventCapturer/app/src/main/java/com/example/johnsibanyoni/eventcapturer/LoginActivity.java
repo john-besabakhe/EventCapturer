@@ -3,15 +3,10 @@ package com.example.johnsibanyoni.eventcapturer;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
-import android.app.LoaderManager.LoaderCallbacks;
-
-import android.database.Cursor;
 
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -29,8 +24,8 @@ import java.util.Map;
 
 import Helpers.SQLiteHandler;
 import Helpers.SessionManager;
-import Models.AppConfig;
-import Models.AppController;
+import models.AppConfig;
+import models.AppController;
 
 /**
  * A login screen that offers login via email/password.
@@ -99,9 +94,11 @@ public class LoginActivity extends AppCompatActivity {
     btnLinkToRegister.setOnClickListener(new View.OnClickListener() {
 
       public void onClick(View view) {
-        Intent i = new Intent(getApplicationContext(),
+        startActivity(new Intent(getApplicationContext(),
+        MainActivity.class));
+        /*Intent i = new Intent(getApplicationContext(),
         RegisterActivity.class);
-        startActivity(i);
+        startActivity(i);*/
         finish();
       }
     });

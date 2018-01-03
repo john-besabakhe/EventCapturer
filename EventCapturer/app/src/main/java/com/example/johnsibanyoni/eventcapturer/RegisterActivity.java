@@ -2,7 +2,6 @@ package com.example.johnsibanyoni.eventcapturer;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -24,8 +23,8 @@ import java.util.Map;
 
 import Helpers.SQLiteHandler;
 import Helpers.SessionManager;
-import Models.AppConfig;
-import Models.AppController;
+import models.AppConfig;
+import models.AppController;
 
 public class RegisterActivity extends AppCompatActivity {
 

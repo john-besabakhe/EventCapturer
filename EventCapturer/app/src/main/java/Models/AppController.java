@@ -1,4 +1,4 @@
-package Models;
+package models;
 
 import android.app.Application;
 import android.text.TextUtils;
