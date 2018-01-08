@@ -7,11 +7,12 @@
     <uses-permission android:name="android.permission.READ_PROFILE"/>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <uses-permission android:name="android.permission.INTERNET"/>
+
     <uses-feature android:name="android.hardware.camera2"/>
+
     <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
-
         android:name="models.AppController"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
@@ -37,17 +38,19 @@
             android:name=".AddEventActivity"
             android:label="@string/add_event">
         </activity>
-        <activity android:name=".CaptureActivity"
-                  android:label="Capture Barcode">
-
+        <activity
+            android:name=".CaptureActivity"
+            android:label="Capture Barcode">
         </activity>
-        <activity android:name=".BarcodeCaptureActivity"
-                  android:label="Read Barcode">
-
+        <activity
+            android:name=".BarcodeCaptureActivity"
+            android:label="Read Barcode">
         </activity>
-        <activity android:name=".MainActivity"
-                  android:label="Barcode Reader">
-
+        <activity
+            android:name=".MainActivity"
+            android:label="Barcode Reader">
+        </activity>
+        <activity android:name=".EventsActivity">
         </activity>
     </application>
 
