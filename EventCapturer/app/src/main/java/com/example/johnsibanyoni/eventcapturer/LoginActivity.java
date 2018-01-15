@@ -95,7 +95,7 @@ public class LoginActivity extends AppCompatActivity {
 
       public void onClick(View view) {
         startActivity(new Intent(getApplicationContext(),
-        MainActivity.class));
+        AddEventActivity.class));
         /*Intent i = new Intent(getApplicationContext(),
         RegisterActivity.class);
         startActivity(i);*/

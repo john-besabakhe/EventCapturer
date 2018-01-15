@@ -10,4 +10,7 @@ public class AppConfig {
 
   // Server user register url
   public static String URL_REGISTER = "http://www.mobileagri.co.za/android_api/register.php";
+
+  //Server add event url
+  public static String URL_ADD_EVENT = "http://www.mobileagri.co.za/android_api/add_event.php";
 }

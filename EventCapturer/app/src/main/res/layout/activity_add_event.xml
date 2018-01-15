@@ -75,18 +75,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/event_type"
+            <android.support.v7.widget.AppCompatSpinner
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/prompt_event_type"
-                android:imeActionId="@+id/login"
-                android:imeActionLabel="@string/action_sign_in_short"
-                android:imeOptions="actionUnspecified"
-                android:inputType="text"
-                android:maxLines="1"
-                android:singleLine="true"/>
-
+                android:id="@+id/event_type"
+                android:layout_height="wrap_content"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
